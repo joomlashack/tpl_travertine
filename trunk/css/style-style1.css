@@ -382,3 +382,24 @@ div#slider {
 #sliderNav a.sliderNext {
 	background:url(../images/arrow-east.png) no-repeat 50% 50% !important;
 }
+.moduletable_ms1, .module_ms1 .pad{
+	background:#EFEDE0;
+	border:1px solid #DFDBC3;
+}
+.moduletable_ms1 h3, .module_ms1 h3 {
+	background:url(../images/style1/mh-1.png) no-repeat 5px 0;
+}
+.moduletable_ms2, .module_ms2 .pad{
+	background:#EFEDE0;
+	border:1px solid #DFDBC3;
+}
+.moduletable_ms2 h3, .module_ms2 h3 {
+	background:url(../images/style1/mh-2.png) no-repeat 5px 0;
+}
+.moduletable_ms3, .module_ms3 .pad{
+	background:#EFEDE0;
+	border:1px solid #DFDBC3;
+}
+.moduletable_ms3 h3, .module_ms3 h3 {
+	background:url(../images/style1/mh-3.png) no-repeat 5px 0;
+}
