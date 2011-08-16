@@ -398,6 +398,11 @@ a.readmore:hover,
 	padding:3px 3px 3px 20px;
 	list-style:none;
 }
+.display {
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+}
 table.category {
 	width:100%;
 }
