@@ -60,7 +60,7 @@ defined('_JEXEC') or die('Restricted access');
       </div>
       <div class="clear"></div>
       <?php endif; ?>
-      <?php if($this->countModules('bredcrumbs')) : ?>
+      <?php if($this->countModules('breadcrumbs')) : ?>
       <div id="breadcrumbs" class="grid_12">
         <w:module type="single" name="breadcrumbs" chrome="none" />
         <div class="clear"></div>
