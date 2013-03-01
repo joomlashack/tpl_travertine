@@ -113,6 +113,7 @@ a:hover {
 #menu ul li a,
 #menu ul li span {
 	display:block;
+	font-weight: bold;
 	text-decoration:none;
 	text-transform:uppercase;
 	position:relative;
