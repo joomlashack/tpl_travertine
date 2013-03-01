@@ -404,3 +404,10 @@ div#slider {
 .moduletable_ms3 h3, .module_ms3 h3 {
 	background:url(../images/style3/mh-3.png) no-repeat 5px 0;
 }
+/*Sliders*/
+.panel h3.pane-toggler-down{
+	background-color: #92725D;
+}
+.panel h3{
+	background-color: #05A4B7;
+}
