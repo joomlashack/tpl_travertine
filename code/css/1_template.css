@@ -113,6 +113,7 @@ a:hover {
 #menu ul li a,
 #menu ul li span {
 	display:block;
+	font-family: "Open Sans";
 	font-weight: bold;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -148,7 +149,8 @@ a:hover {
 	text-align: left;
 	display:block;
 }
-#menu ul ul li a {
+#menu ul ul li a,
+#menu ul ul li span {
 	padding:0 15px;
 	font-size:12px;
 	font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
@@ -177,6 +179,9 @@ a:hover {
 }
 #elements {
 	padding: 0 0 20px 0;
+}
+#breadcrumbs{
+	margin-bottom: 10px;
 }
 #breadcrumbs .grid{
 	font-size:80%;
