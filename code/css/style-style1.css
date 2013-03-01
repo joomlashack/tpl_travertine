@@ -41,7 +41,8 @@ blockquote, blockquote.right, blockquote.left {
 }
 #menu ul li {
 }
-#menu ul li a {
+#menu ul li a,
+#menu ul li span {
 	color:#FFF;
 	text-shadow:1px 1px 0 #456F61;
 	-moz-text-shadow:1px 1px 0 #456F61;

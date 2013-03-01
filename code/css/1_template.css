@@ -110,7 +110,8 @@ a:hover {
 	position: relative;
 	display:inline-block;
 }
-#menu ul li a {
+#menu ul li a,
+#menu ul li span {
 	display:block;
 	text-decoration:none;
 	text-transform:uppercase;
