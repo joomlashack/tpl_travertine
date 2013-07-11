@@ -10,7 +10,6 @@
  */
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-JHTML::_ ( 'behavior.mootools' );
 ?>
 <doctype>
 <html>
