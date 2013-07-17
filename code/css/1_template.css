@@ -1233,3 +1233,23 @@ dl#tabs dt:hover, dl#tabs dt.open, dl.tabs dt:hover, dl.tabs dt.open{
 .pane-slider.content.pane-down{
 	padding-top: 10px !important;
 }
+div.pagination{
+	display: block;
+}
+div.pagination p.counter.pull-right,
+div.pagination p.counter{
+	float: left;
+	line-height: 41px;
+}
+div.pagination span.pagination{
+	clear: none;
+	float: left;
+	line-height: 46px;
+}
+.item-page .form-inline{
+	margin-bottom: 10px;
+}
+ul.pagenav li a, div.pagination ul li a{
+	background-color: transparent;
+	color: #4F4F4F;
+}
