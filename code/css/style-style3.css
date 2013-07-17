@@ -50,23 +50,11 @@ blockquote, blockquote.right, blockquote.left {
 }
 #menu ul li a:hover {
 }
-#menu ul li.active a, #menu ul li a.active {
+#menu ul li.active > a, #menu ul li a.active, #menu ul li.active > span, #menu ul li span.active {
 	color:#D1DEE4;
 }
 #menu ul ul {
 	background:#01B4CB;
-}
-#menu ul ul li {
-}
-#menu ul li ul li a {
-}
-#menu ul li ul li a:hover {
-}
-#menu ul li.active li a {
-}
-#menu ul li.active li a:hover {
-}
-#elements {
 }
 #breadcrumbs .grid{
 	background:#EFFCFF;
