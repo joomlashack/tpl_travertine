@@ -1253,3 +1253,6 @@ ul.pagenav li a, div.pagination ul li a{
 	background-color: transparent;
 	color: #4F4F4F;
 }
+dl.stats-module{
+	overflow: hidden;
+}
