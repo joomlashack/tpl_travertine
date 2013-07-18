@@ -130,8 +130,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	-moz-box-shadow: 2px 3px 0 rgba(0,0,0,0.2);
 	-webkit-box-shadow: 2px 3px 0 rgba(0,0,0,0.2);
 }
-.item .readmore a, 
-.leading .readmore a,
+.readmore a,
 .mod-articles-category-readmore a{
 	background:#454545 url(../images/control_play.png) no-repeat 5px 8px;
 	color:#FFF;
