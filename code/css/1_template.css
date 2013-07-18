@@ -1277,3 +1277,10 @@ dl.stats-module{
 .cat-children ul{
 	clear: both;
 }
+.blog .item-title, .blog-featured .item-title{
+	margin-top: 10px;
+}
+.registration .form-actions a.btn{
+	background: #79A094;
+	color: #FFF;
+}
