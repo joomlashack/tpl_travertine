@@ -313,8 +313,11 @@ ul.category-module li {
 	background:url(../images/arrow-east.png) no-repeat 0 3px;
 	border-bottom:1px dashed #B3E9EF;
 }
-.moduletable_menu ul li a{
-	background:url(../images/arrow-east.png) no-repeat 0 7px;
+.moduletable_menu ul li a,
+.moduletable_menu ul li [class^="icon-"], 
+.moduletable_menu ul li [class*=" icon-"],
+.moduletable_menu ul li span.separator{
+	background:url(../images/arrow-east.png) no-repeat 0 7px !important;
 	border-bottom:1px dashed #B3E9EF;
 }
 .moduletable_menu ul li.current a {
