@@ -861,23 +861,39 @@ ul.newsfeed li {
 	padding:0;
 	list-style:none;
 }
-.moduletable_menu li a {
+.moduletable_menu li a,
+.moduletable_menu li [class^="icon-"],
+.moduletable_menu li [class*=" icon-"],
+.moduletable_menu li span.separator{
+	display:block;
+	padding:3px 3px 3px 25px;
+	text-align: left;
+}
+.moduletable_menu li li a,
+.moduletable_menu li li [class^="icon-"],
+.moduletable_menu li li [class*=" icon-"],
+.moduletable_menu li li span.separator{
 	display:block;
 	padding:3px 3px 3px 25px;
 }
-.moduletable_menu li li a{
-	display:block;
-	padding:3px 3px 3px 25px;
-}
-.moduletable_menu li li li a{
-	display:block;
-	padding:3px 3px 3px 35px;
-}
-.moduletable_menu li li li li a{
+.moduletable_menu li li li a,
+.moduletable_menu li li li [class^="icon-"],
+.moduletable_menu li li li [class*=" icon-"],
+.moduletable_menu li li li span.separator{
 	display:block;
 	padding:3px 3px 3px 35px;
 }
-.moduletable_menu li li li li li a{
+.moduletable_menu li li li li a,
+.moduletable_menu li li li li [class^="icon-"],
+.moduletable_menu li li li li [class*=" icon-"],
+.moduletable_menu li li li li span.separator{
+	display:block;
+	padding:3px 3px 3px 35px;
+}
+.moduletable_menu li li li li li a,
+.moduletable_menu li li li li li [class^="icon-"],
+.moduletable_menu li li li li li [class*=" icon-"],
+.moduletable_menu li li li li li span.separator{
 	display:block;
 	padding:3px 3px 3px 45px;
 }
@@ -1281,6 +1297,22 @@ dl.stats-module{
 	margin-top: 10px;
 }
 .registration .form-actions a.btn{
+	background: #79A094;
+	color: #FFF;
+}
+#searchForm .btn-group.pull-left{
+	margin-right: 10px;
+}
+#searchForm .btn-group.pull-left input{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#finder-search .btn{
+	background: #79A094;
+	color: #FFF;
+	margin-top: 10px;
+}
+.btn.dropdown-toggle{
 	background: #79A094;
 	color: #FFF;
 }
