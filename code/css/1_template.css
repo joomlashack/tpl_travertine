@@ -831,6 +831,10 @@ ul.newsfeed li {
 	width: 285px;
 	margin:0 5px;
 }
+.moduletable .search input.inputbox {
+	background-color: #fff;
+	border: 1px solid #DFDBC3;
+}
 .moduletable .search .button {
 	background: transparent;
 	border: 0 none;
@@ -1255,4 +1259,21 @@ ul.pagenav li a, div.pagination ul li a{
 }
 dl.stats-module{
 	overflow: hidden;
+}
+.menu li span.separator{
+	color:#0088CC;
+}
+#mod-finder-searchform input{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#mod-finder-searchform .finder{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.login button{
+	margin-top: 10px;
+}
+.cat-children ul{
+	clear: both;
 }
