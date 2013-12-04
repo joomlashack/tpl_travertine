@@ -130,7 +130,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	-moz-box-shadow: 2px 3px 0 rgba(0,0,0,0.3);
 	-webkit-box-shadow: 2px 3px 0 rgba(0,0,0,0.3);
 }
-.readmore a, 
+.readmore a,
 .mod-articles-category-readmore a{
 	background:#79A094 url(../images/control_play.png) no-repeat 5px 8px;
 	color:#FFF;
@@ -151,8 +151,8 @@ a.readmore {
 	-moz-box-shadow: 2px 3px 0 rgba(0,0,0,0.3);
 	-webkit-box-shadow: 2px 3px 0 rgba(0,0,0,0.3);
 }
-.item .readmore a:hover, 
-.leading .readmore a:hover, 
+.item .readmore a:hover,
+.leading .readmore a:hover,
 a.readmore:hover,
 .mod-articles-category-readmore a:hover {
 	background:#628F80 url(../images/control_play.png) no-repeat 5px 8px;
@@ -230,33 +230,27 @@ ol.list li h4 a, .search-results ol li h4 a {
 	border:1px solid #EFEDE0;
 	background:#EFEDE0;
 }
-.newsfeed ol li h4 {
-}
-.panel {
-	border:1px solid #EFEDE0;
-	background:#EFEDE0;
-}
 .login, .logout, .profile-edit, .remind, .reset, .registration {
 	border:1px solid #EFEDE0;
 	background:#EFEDE0;
 }
-.moduletable , 
-.moduletable_menu , 
+.moduletable ,
+.moduletable_menu ,
 .moduletable_text {
 	background:#EFEDE0;
 	border:1px solid #DFDBC3;
 }
-.module .pad, 
-.module_menu .pad , 
+.module .pad,
+.module_menu .pad ,
 .module_text .pad{
 	background:#EFEDE0;
 	border:1px solid #DFDBC3;
 }
-.moduletable h3, 
-.moduletable_menu h3, 
+.moduletable h3,
+.moduletable_menu h3,
 .moduletable_text h3,
-.module h3, 
-.module_menu h3, 
+.module h3,
+.module_menu h3,
 .module_text h3 {
 	color:#454545;
 	background:#EFEDE0 url(../images/control_play.png) no-repeat 5px 17px;
@@ -314,7 +308,7 @@ ul.category-module li {
 	border-bottom:1px dashed #DFDBC3;
 }
 .moduletable_menu ul li a,
-.moduletable_menu ul li [class^="icon-"], 
+.moduletable_menu ul li [class^="icon-"],
 .moduletable_menu ul li [class*=" icon-"],
 .moduletable_menu ul li span.separator{
 	background:url(../images/arrow-east.png) no-repeat 0 7px !important;
@@ -393,11 +387,4 @@ div#slider {
 }
 .moduletable_ms3 h3, .module_ms3 h3 {
 	background:url(../images/style1/mh-3.png) no-repeat 5px 0;
-}
-/*Sliders*/
-.panel h3.pane-toggler-down{
-	background-color: #362511;
-}
-.panel h3{
-	background-color: #79A094;
 }

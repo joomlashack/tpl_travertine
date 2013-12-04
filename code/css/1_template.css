@@ -98,10 +98,12 @@ a:hover {
 	padding:0;
 }
 #menu ul {
+	display:block;
+	margin-left: 46px;
+	max-width: 1021px;
+	padding:0;
 	position: relative;
 	z-index: 597;
-	display:block;
-	padding:0;
 }
 #menu ul li {
 	vertical-align: middle;
@@ -297,7 +299,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	margin:20px 0;
 }
 .article-info-box {
-	margin:10px 0;	
+	margin:10px 0;
 	clear:both;
 }
 span.content_rating {
@@ -339,8 +341,8 @@ span.content_rating img {
 	top: 1px;
 	border:0;
 }
-.item .readmore a, 
-.leading .readmore a, 
+.item .readmore a,
+.leading .readmore a,
 a.readmore,
 .mod-articles-category-readmore a{
 	display: inline-block;
@@ -360,8 +362,8 @@ a.readmore,
 	font-size:80%;
 	font-weight:600;
 }
-.item .readmore a:hover, 
-.leading .readmore a:hover, 
+.item .readmore a:hover,
+.leading .readmore a:hover,
 a.readmore:hover,
 .mod-articles-category-readmore a:hover {
 	text-decoration: none;
@@ -519,9 +521,6 @@ table.pagenav th {
 .sep {
 	margin:0 5px;
 }
-.contact_email label {
-	display:block;
-}
 .contact_email #contact_email_copy {
 	float:left;
 	margin:5px 10px;
@@ -529,13 +528,13 @@ table.pagenav th {
 .contact_email button {
 	margin:10px 0;
 }
+.accordion-inner{
+	padding: 10px;
+}
 .panel {
 	margin:0 0 10px 0;
 	padding:10px;
 	list-style:none;
-}
-.contact label {
-	display:block;
 }
 .contact .fl-right {
 	float:none;
@@ -668,12 +667,12 @@ ul.polls-options li label {
 ul.polls-options li input {
 	margin:0 0 5px 0;
 }
-.moduletable, 
-.moduletable_menu, 
-.moduletable_text, 
-.moduletable_ms1, 
-.moduletable_ms2, 
-.moduletable_ms3, 
+.moduletable,
+.moduletable_menu,
+.moduletable_text,
+.moduletable_ms1,
+.moduletable_ms2,
+.moduletable_ms3,
 .moduletable_ms4 {
 	margin-bottom:20px;
 	padding:10px;
@@ -684,12 +683,12 @@ ul.polls-options li input {
 	-webkit-border-radius:8px;
 	position:relative;
 }
-.module, 
-.module_menu, 
-.module_text, 
-.module_ms1, 
-.module_ms2, 
-.module_ms3, 
+.module,
+.module_menu,
+.module_text,
+.module_ms1,
+.module_ms2,
+.module_ms3,
 .module_ms4{
 	font-size:80%;
 	margin-bottom:20px;
@@ -699,12 +698,12 @@ ul.polls-options li input {
 	-webkit-border-radius:8px;
 	position:relative;
 }
-.module .pad, 
-.module_menu .pad, 
-.module_text .pad, 
-.module_ms1 .pad, 
-.module_ms2 .pad, 
-.module_ms3 .pad, 
+.module .pad,
+.module_menu .pad,
+.module_text .pad,
+.module_ms1 .pad,
+.module_ms2 .pad,
+.module_ms3 .pad,
 .module_ms4 .pad{
 	padding:10px;
 	min-height:200px;
@@ -713,11 +712,11 @@ ul.polls-options li input {
 	-webkit-border-radius:8px;
 	position:relative;
 }
-.moduletable h3, 
-.moduletable_menu h3, 
+.moduletable h3,
+.moduletable_menu h3,
 .moduletable_text h3,
-.module h3, 
-.module_menu h3, 
+.module h3,
+.module_menu h3,
 .module_text h3 {
 	line-height:51px;
 	font-size:1.3em;
@@ -745,35 +744,35 @@ ul.polls-options li input {
 	padding:0 12px 0 65px;
 	margin:-9px -9px 10px -9px;
 }
-ul.stats-module, 
-ul.archive-module, 
-ul.sections-module, 
-ul.polls-options, 
-ul.latestnews, 
-ul.mostread, 
-ul.newsfeed, 
-ul.menu, 
-ul.categories-module, 
-ul.category-module, 
-ul.relateditems, 
-ul.weblinks, 
-#form-login ul, 
-#login-form ul, 
-ul.latestusers, 
-ul.stats-module li, 
-ul.archive-module li, 
-ul.sections-module li, 
-ul.polls-options li, 
-ul.latestnews li, 
-ul.mostread li, 
-ul.newsfeed li, 
-ul.menu li, 
-ul.categories-module li, 
-ul.category-module li, 
-ul.relateditems li, 
-#form-login ul li, 
-#login-form ul li, 
-ul.latestusers li, 
+ul.stats-module,
+ul.archive-module,
+ul.sections-module,
+ul.polls-options,
+ul.latestnews,
+ul.mostread,
+ul.newsfeed,
+ul.menu,
+ul.categories-module,
+ul.category-module,
+ul.relateditems,
+ul.weblinks,
+#form-login ul,
+#login-form ul,
+ul.latestusers,
+ul.stats-module li,
+ul.archive-module li,
+ul.sections-module li,
+ul.polls-options li,
+ul.latestnews li,
+ul.mostread li,
+ul.newsfeed li,
+ul.menu li,
+ul.categories-module li,
+ul.category-module li,
+ul.relateditems li,
+#form-login ul li,
+#login-form ul li,
+ul.latestusers li,
 ul.weblinks li,
 ul.whosonline,
 ul.whosonline li{
@@ -781,15 +780,15 @@ ul.whosonline li{
 	padding:0;
 	list-style:none;
 }
-ul.stats-module li, 
-ul.archive-module li, 
-ul.sections-module li, 
-ul.latestnews li, 
-ul.mostread li, 
-ul.weblinks li, 
-ul.relateditems li, 
-ul.latestusers li, 
-ul.categories-module li, 
+ul.stats-module li,
+ul.archive-module li,
+ul.sections-module li,
+ul.latestnews li,
+ul.mostread li,
+ul.weblinks li,
+ul.relateditems li,
+ul.latestusers li,
+ul.categories-module li,
 ul.category-module li,
 ul.whosonline li {
 	display:block;
@@ -1235,21 +1234,44 @@ dl#tabs dt:hover, dl#tabs dt.open, dl.tabs dt:hover, dl.tabs dt.open{
 	box-shadow: none;
 }
 /*Sliders*/
+
+.panel{
+	border-radius: 4px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 2px;
+}
+
+.panel h3{
+	background-color: transparent;
+	background-image: none;
+	padding: 8px 15px;
+}
+
+.panel .title{
+	font-weight: bold;
+}
+
 .panel h3.pane-toggler-down{
+	background-image: none;
 	box-shadow: none;
 }
+
+.panel h3.pane-toggler-down a{
+	border-bottom: none;
+	margin: 0;
+	padding-bottom: 0;
+}
+
+form#selectForm{
+	margin-bottom: 15px;
+}
+
 #contact-slider .panel{
-	margin-bottom: 0;
 	padding-bottom: 0;
 	padding-right: 0;
 	padding-top: 0;
 }
-.panel h3 a{
-	color: #fff;
-}
-.panel h3.pane-toggler-down a{
-	border-bottom: none;
-}
+
 .pane-slider.content.pane-down{
 	padding-top: 10px !important;
 }
@@ -1315,4 +1337,46 @@ dl.stats-module{
 .btn.dropdown-toggle{
 	background: #79A094;
 	color: #FFF;
+}
+
+.contact .contact-address.dl-horizontal dd,
+.contact .contact-position.dl-horizontal dd {
+	margin-left: 40px;
+}
+
+.contact .contact-address.dl-horizontal dt,
+.contact .contact-position.dl-horizontal dt {
+	width: 25px;
+}
+
+.nav-tabs{
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.nav-tabs > li > a{
+	background-color: #efede0;
+	border-color: #ded9be;
+	margin-right: 5px;
+	padding: 5px;
+}
+.nav-tabs > li > a:hover{
+	background-color: #efede0;
+	border-color: #ded9be;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background-color: #efede0;
+	border-color: #ded9be;
+	color: #aaa;
+}
+
+.tab-content{
+	background-color: #efede0;
+	border-radius: 0 5px 5px 5px;
+	border: 1px solid #ded9be;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
