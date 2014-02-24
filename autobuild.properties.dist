@@ -1,2 +1,2 @@
-www.dir=/var/www/travertine
+www.dir=C:/xampp/htdocs/Joomla_2.5.18/
 node.skip=false
