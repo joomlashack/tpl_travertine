@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
 <html>
 <head>
 <w:head />
-<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/js_travertine/js/mootools.fullbg.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/js_travertine/js/jquery.fullbg.min.js"></script>
 </head>
 <body>
 <img src="<?php echo $this->baseurl ?>/templates/js_travertine/images/<?php echo $this->params->get('style') ?>/bg.jpg" id="background" alt="">
