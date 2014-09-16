@@ -6,7 +6,7 @@
  *
  * Use this file to add any PHP to the template before it is executed
  */
- 
+
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
 
@@ -19,3 +19,10 @@ if(JRequest::getVar('task') == 'edit' || JRequest::getVar('layout') == 'form'){
 	$load = true;
 }
 if ($load) $this->document->addStyleDeclaration($styles);
+
+if (version_compare(JVERSION, '3.0', 'lt')) {
+    $document->addScript($this->baseurl . '/templates/js_travertine/wright/js/jquery.min.js');
+}
+else {
+    JHtml::_('jquery.framework');
+}
