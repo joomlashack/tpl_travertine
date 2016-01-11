@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright	Copyright (C) 2005 - 2011 Joomlashack / Meritage Assets
+ * @copyright	Copyright (C) 2005 - 2016 Joomlashack / Meritage Assets
  * @author		Jeremy Wilken - Joomlashack
  * @package		Wright
  *
