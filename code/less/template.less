@@ -7,13 +7,19 @@
 		> li {
 			> a {
 				text-transform: uppercase;
+				.p-b-1;
+				.p-t-1;
 			}
 		}
 	}
 }
 
+.navbar-inner {
+	.p-b-0;
+	.p-t-0;
+}
+
 .bg-color {
-	.box-shadow(0 1px 4px rgba(0,0,0,0.065));
 	.box-sizing(border-box);
 	padding: @paddingLarge;
 }
@@ -26,20 +32,44 @@
 	background-color: @color_one;
 }
 
-.border-radius-bottom {
+.bg-color-two {
+	background-color: @color_two;
+}
+
+.bg-color-three {
+	background-color: @color_three;
+	color: @grayLight;
+}
+
+.border-radius-large {
+	border-radius: @borderRadiusLarge;
+}
+
+.border-bottom-radius-large {
 	border-bottom-left-radius: @borderRadiusLarge;
 	border-bottom-right-radius: @borderRadiusLarge;
+}
+
+.border-top-radius-large {
+	border-top-left-radius: @borderRadiusLarge;
+	border-top-right-radius: @borderRadiusLarge;
+}
+
+.shadow {
+	.box-shadow(0 5px rgba(0,0,0,0.5));
 }
 
 // Various
 
 p:last-child,
+.nav:last-child,
 form:last-child,
-.pagination {
+.pagination, .pager,
+[class*="newsflash-horiz"] .readmore {
 	.m-b-0;
 }
 
-.pagination {
+.pagination, .pager {
 	.m-t-2;
 }
 
@@ -98,8 +128,33 @@ div.categories-list h3
 	.m-b-2;
 }
 
-[class*="module"] {
+
+.items-bg [class^="module"]:not(.well),
+.module > [class^="module"]:not(.well) {
+	background-color: @wellBackground;
+	.border-radius-large;
 	.well;
+
+	div, ul {
+		&:last-child {
+			.m-b-0;
+		}
+	}
+
+	.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+		background-color: @wellBackground;
+	}
+
+	&.hero-unit {
+		background-color: @heroUnitBackground;
+		padding: 60px;
+	}
+}
+
+#below-content {
+	[class*="module"]:last-child {
+		.m-b-0;
+	}
 }
 
 .breadcrumb {
@@ -147,17 +202,10 @@ h1, h2, h3, h4, h5, h6,
 	.navbar {.m-0;}
 }
 
-#footer {
-	.bg-color;
-	color: @white;
-	padding-bottom: 0;
-	padding-top: 0;
-}
-
 .footer-content {
 	.row-fluid {
-		padding-bottom: 5rem;
-		padding-top: 5rem;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
 	}
 
 	.moduletable, .module {
@@ -179,16 +227,14 @@ h1, h2, h3, h4, h5, h6,
 
 .well {
 	.bg-color;
+	border-color: @tableBorder;
 	.m-b-2;
-	color: @black;
 }
-
 
 .img-polaroid {
 	.box-sizing(border-box);
 }
 
-.nav,
 .login,
 .table,
 .items-row,
@@ -239,7 +285,7 @@ dl.article-info {
 }
 
 .btn {
-	.box-shadow(none);
+	.box-shadow(2px 3px 0 rgba(0,0,0,0.3));
 }
 
 .btn:not(.btn-link) {

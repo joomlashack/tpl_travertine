@@ -40,7 +40,7 @@
 
 @color_one: #79A094;
 @color_two: #6F593E;
-@color_thre: #362511;
+@color_three: #362511;
 @color_four: #EFEDE0;
 
 // Grays
@@ -87,7 +87,7 @@
 @baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @sansFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
@@ -107,7 +107,7 @@
 @paddingMini:           0 6px;   // 22px
 
 @baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
+@borderRadiusLarge:     8px;
 @borderRadiusSmall:     3px;
 
 
@@ -116,7 +116,7 @@
 @tableBackground:                   transparent; // overall background-color
 @tableBackgroundAccent:             #f9f9f9; // for striping
 @tableBackgroundHover:              @grayLighter; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBorder:                       #DFDBC3; // table and cell border
 
 // Buttons
 // -------------------------
@@ -146,7 +146,7 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
+@inputBorder:                   @tableBorder;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
 @formActionsBackground:         @grayLighter;
@@ -198,7 +198,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                @tableBorder;
 
 
 // Horizontal forms & lists
@@ -231,16 +231,16 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @color_three;
+@navbarInverseBackgroundHighlight:       @color_three;
+@navbarInverseBorder:                    @color_three;
 
 @navbarInverseText:                      @grayLight;
 @navbarInverseLinkColor:                 @grayLight;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundActive:      transparent;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
@@ -253,7 +253,7 @@
 // Pagination
 // -------------------------
 @paginationBackground:                #fff;
-@paginationBorder:                    #ddd;
+@paginationBorder:                    @tableBorder;
 @paginationActiveBackground:          @grayLighter;
 
 
@@ -278,7 +278,7 @@
 @successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #3a87ad;
+@infoText:                @linkColor;
 @infoBackground:          #d9edf7;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 

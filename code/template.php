@@ -30,12 +30,11 @@ defined('_JEXEC') or die('Restricted access');
 		<?php
 			endif;
 		?>
-		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-one">
+		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-two border-bottom-radius-large shadow  m-b-2 p-b-2 p-t-2">
 			<!-- header -->
-			<header id="header" class="m-b-1 p-t-1">
-				<div class="row-fluid clearfix">
+			<header id="header" class="m-b-2">
+				<div class="row-fluid">
 					<w:logo name="top" />
-					<div class="clear"></div>
 				</div>
 			</header>
 			<?php
@@ -43,11 +42,11 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- menu -->
-	   		<w:nav name="menu" />
+	   	<w:nav name="menu" wrapper="m-b-2" />
 			<?php
 				endif;
 			?>
-			<div class="bg-color bg-color-white">
+			<div class="bg-color bg-color-white border-top-radius-large shadow p-b-0 clearfix">
 				<!-- featured -->
 				<?php
 					if ($this->countModules('featured'))
@@ -64,7 +63,7 @@ defined('_JEXEC') or die('Restricted access');
 					if ($this->countModules('grid-top'))
 						:
 				?>
-				<div id="grid-top" class="m-b-1">
+				<div id="grid-top" class="items-bg">
 					<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
 				</div>
 				<?php
@@ -75,13 +74,13 @@ defined('_JEXEC') or die('Restricted access');
 						:
 				?>
 				<!-- grid-top2 -->
-				<div id="grid-top2">
+				<div id="grid-top2" class="items-bg">
 					<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
 				</div>
 				<?php
 					endif;
 				?>
-				<div id="main-content" class="row-fluid">
+				<div id="main-content" class="row-fluid m-b-2">
 					<!-- sidebar1 -->
 					<aside id="sidebar1">
 						<w:module name="sidebar1" />
@@ -93,7 +92,7 @@ defined('_JEXEC') or die('Restricted access');
 								:
 						?>
 						<!-- above-content -->
-						<div id="above-content">
+						<div id="above-content" class="items-bg">
 							<w:module type="none" name="above-content" />
 						</div>
 						<?php
@@ -105,7 +104,7 @@ defined('_JEXEC') or die('Restricted access');
 						?>
 						<!-- breadcrumbs -->
 						<div id="breadcrumbs">
-							<w:module name="breadcrumbs" chrome="none" />
+							<w:module name="breadcrumbs" chrome="none" type="none" />
 						</div>
 						<?php
 							endif;
@@ -117,7 +116,7 @@ defined('_JEXEC') or die('Restricted access');
 								:
 						?>
 						<!-- below-content -->
-						<div id="below-content" class="m-t-1">
+						<div id="below-content" class="m-t-2 items-bg">
 							<w:module type="none" name="below-content" />
 						</div>
 						<?php
@@ -134,7 +133,7 @@ defined('_JEXEC') or die('Restricted access');
 						:
 				?>
 				<!-- grid-bottom -->
-				<div id="grid-bottom" class="m-b-1">
+				<div id="grid-bottom" class="items-bg">
 					<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
 				</div>
 				<?php
@@ -145,7 +144,7 @@ defined('_JEXEC') or die('Restricted access');
 						:
 				?>
 				<!-- grid-bottom2 -->
-				<div id="grid-bottom2">
+				<div id="grid-bottom2" class="items-bg">
 					<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
 				</div>
 				<?php
@@ -153,37 +152,29 @@ defined('_JEXEC') or die('Restricted access');
 				?>
 			</div>
 			<!-- footer -->
-			<div class="wrapper-footer">
-			   <footer id="footer" <?php
-				if ($this->params->get('stickyFooter', 1))
+		  <footer class="bg-color bg-color-three border-bottom-radius-large shadow">
+				<?php
+					if ($this->countModules('bottom-menu'))
 					:
-					?> class="sticky"<?php
-				endif;
-					?>>
+				?>
+				<!-- bottom-menu -->
+				<w:nav containerClass="" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+				<?php
+					endif;
+				?>
 
-					<?php
-						if ($this->countModules('bottom-menu'))
+		   	<div class="footer-content">
+			   	<?php
+						if ($this->countModules('footer'))
 						:
 					?>
-					<!-- bottom-menu -->
-					<w:nav containerClass="" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
-					<?php
+					<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
+				 	<?php
 						endif;
 					?>
-
-			   	<div class="footer-content p-t-1">
-				   	<?php
-							if ($this->countModules('footer'))
-							:
-						?>
-						<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
-					 	<?php
-							endif;
-						?>
-						<w:footer />
-					</div>
-			   </footer>
-			</div>
+					<w:footer />
+				</div>
+		  </footer>
 	    <w:module type="none" name="debug" chrome="none" />
 		</div>
 	</body>
