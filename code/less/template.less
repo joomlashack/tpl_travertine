@@ -227,7 +227,8 @@ h1, h2, h3, h4, h5, h6,
 
 .well {
 	.bg-color;
-	border-color: @tableBorder;
+	.box-shadow(none);
+	border: 1px solid @tableBorder;
 	.m-b-2;
 }
 
@@ -278,14 +279,24 @@ h1, h2, h3, h4, h5, h6,
 
 dl.article-info {
 	.m-b-1;
+	.m-t-1;
+	.p-0;
 
 	dd {
 		margin-right: 5px;
+	}
+
+	+ .readmore {
+		.m-t-0;
 	}
 }
 
 .btn {
 	.box-shadow(2px 3px 0 rgba(0,0,0,0.3));
+
+	&:hover, &:focus, &:active {
+		.box-shadow(2px 3px 0 rgba(0,0,0,0.3));
+	}
 }
 
 .btn:not(.btn-link) {

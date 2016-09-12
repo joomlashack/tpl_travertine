@@ -30,7 +30,7 @@ defined('_JEXEC') or die('Restricted access');
 		<?php
 			endif;
 		?>
-		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-two border-bottom-radius-large shadow  m-b-2 p-b-2 p-t-2">
+		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-two border-bottom-radius-large shadow  m-b-3 p-b-2 p-t-2">
 			<!-- header -->
 			<header id="header" class="m-b-2">
 				<div class="row-fluid">
@@ -46,7 +46,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php
 				endif;
 			?>
-			<div class="bg-color bg-color-white border-top-radius-large shadow p-b-0 clearfix">
+			<div class="bg-color bg-color-white border-top-radius-large shadow p-b-0 p-t-2 clearfix">
 				<!-- featured -->
 				<?php
 					if ($this->countModules('featured'))
