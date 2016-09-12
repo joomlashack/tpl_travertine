@@ -166,12 +166,12 @@ defined('_JEXEC') or die('Restricted access');
 						:
 					?>
 					<!-- bottom-menu -->
-					<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+					<w:nav containerClass="" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
 					<?php
 						endif;
 					?>
 
-			   	<div class="<?php echo $wrightContainerClass; ?> footer-content p-t-1">
+			   	<div class="footer-content p-t-1">
 				   	<?php
 							if ($this->countModules('footer'))
 							:

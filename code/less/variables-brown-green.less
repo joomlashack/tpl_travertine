@@ -38,8 +38,10 @@
 // Global values
 // --------------------------------------------------
 
-@color_one: #6F593E;
-
+@color_one: #79A094;
+@color_two: #6F593E;
+@color_thre: #362511;
+@color_four: #EFEDE0;
 
 // Grays
 // -------------------------
@@ -48,7 +50,7 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLighter:           #EFEDE0;
+@grayLighter:           @color_four;
 @white:                 #fff;
 
 
@@ -72,7 +74,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @btnBackground;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -216,7 +218,7 @@
 
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #87aa9f;
-@navbarBackground:                #79a094;
+@navbarBackground:                @color_one;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #fff;

@@ -62,10 +62,10 @@ div.categories-list h3
 .categories-list {
 	.item-title {
 		.m-b-0;
+	}
 
-		.category-desc {
-			margin-top: .5rem;
-		}
+	.category-desc {
+		margin-top: .5rem;
 	}
 
 	> div {
@@ -94,14 +94,12 @@ div.categories-list h3
 	border-bottom-color: darken(@dropdownBackground, 10%);
 }
 
-
-
 .navbar, .breadcrumb {
 	.m-b-2;
 }
 
 [class*="module"] {
-	.m-b-2;
+	.well;
 }
 
 .breadcrumb {
@@ -179,21 +177,8 @@ h1, h2, h3, h4, h5, h6,
 	position: relative;
 }
 
-.items-bg [class^="module"]:not(.well),
-.module > [class^="module"]:not(.well) {
-	.bg-color;
-	.bg-color-white;
-	.m-b-2;
-
-	&.hero-unit {
-		background-color: @heroUnitBackground;
-		padding: 60px;
-	}
-}
-
 .well {
 	.bg-color;
-	border: 0;
 	.m-b-2;
 	color: @black;
 }
