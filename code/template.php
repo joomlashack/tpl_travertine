@@ -26,7 +26,7 @@ defined('_JEXEC') or die('Restricted access');
 				:
 		?>
 		<!-- toolbar -->
-		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" wrapClass="navbar-fixed-top navbar-inverse text-medium" type="toolbar" name="toolbar" />
 		<?php
 			endif;
 		?>
@@ -152,7 +152,7 @@ defined('_JEXEC') or die('Restricted access');
 				?>
 			</div>
 			<!-- footer -->
-		  <footer class="bg-color bg-color-three border-bottom-radius-large shadow">
+		  <footer class="bg-color bg-color-three border-bottom-radius-large shadow text-medium">
 				<?php
 					if ($this->countModules('bottom-menu'))
 					:

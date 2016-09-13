@@ -8,9 +8,20 @@
 			> a {
 				text-transform: uppercase;
 				font-weight: bold;
-				.text-shadow-dark;
+				text-shadow: 1px 1px 0 @linkColorHover;
 				.p-b-1;
 				.p-t-1;
+			}
+		}
+	}
+}
+
+.navbar-inverse {
+	.nav {
+		> li {
+			> a {
+				font-weight: normal;
+				text-shadow: none;
 			}
 		}
 	}
@@ -53,6 +64,10 @@
 
 .text-shadow-light {
 	text-shadow: white 1px 1px 0px;
+}
+
+.text-medium {
+	font-size: @baseFontSize - 2;
 }
 
 .border-radius-large {
@@ -156,6 +171,10 @@ div.categories-list h3
 
 	> h3 {
 		border-bottom: 1px dashed @tableBorder;
+		margin-left: -19px;
+		margin-right: -19px;
+		padding-left: 19px;
+		padding-right: 19px;
 		.p-b-1;
 		.text-shadow-light;
 	}
@@ -213,6 +232,23 @@ h1, h2, h3, h4, h5, h6,
 	.m-b-1;
 }
 
+hr, legend, .page-header,
+.list-striped li, .list-striped dd, .row-striped .row, .row-striped .row-fluid {
+	border-bottom-style: dashed;
+}
+
+.list-striped li, .list-striped dd, .row-striped .row, .row-striped .row-fluid {
+	border-bottom-color: @tableBorder ;
+}
+
+.list-striped, .row-striped {
+	border-top-style: dashed;
+}
+
+hr {
+	border-top-style: dashed;
+}
+
 #bottom-menu {
 	.navbar-inner {
 		border: 0;
@@ -255,8 +291,8 @@ h1, h2, h3, h4, h5, h6,
 	.box-shadow(none);
 	border: 1px solid @tableBorder;
 	.m-b-2;
-	.p-b-2;
-	.p-t-2;
+	.p-b-1;
+	.p-t-1;
 }
 
 .img-polaroid {
@@ -314,6 +350,7 @@ dl.article-info {
 
 .btn {
 	.box-shadow(2px 3px 0 rgba(0,0,0,0.3));
+	.text-shadow-dark;
 
 	&:hover, &:focus, &:active {
 		.box-shadow(2px 3px 0 rgba(0,0,0,0.3));
