@@ -25,14 +25,14 @@
 
 // Dropdown For navbar-inverse
 // -------------------------
-@navbarInverseDropdownBackground : @dropdownBackground;
-@navbarInverseDropdownBorderFallback : #ccc;
-@navbarInverseDropdownBorder : @dropdownBorder;
-@navbarInverseDropdownLinkColor : @dropdownLinkColor;
-@navbarInverseDropdownLinkColorHover : @dropdownLinkColorHover;
-@navbarInverseDropdownLinkColorActive : @dropdownLinkColorActive;
-@navbarInverseDropdownLinkBackgroundHover : @dropdownLinkBackgroundHover;
-@navbarInverseDropdownLinkBackgroundActive : @dropdownLinkBackgroundActive;
+@navbarInverseDropdownBackground : @navbarInverseBackground;
+@navbarInverseDropdownBorderFallback : @navbarInverseBackground;
+@navbarInverseDropdownBorder : @navbarInverseBackground;
+@navbarInverseDropdownLinkColor : @navbarInverseLinkColor;
+@navbarInverseDropdownLinkColorHover : @navbarInverseLinkColorHover;
+@navbarInverseDropdownLinkColorActive : @navbarInverseLinkColorActive;
+@navbarInverseDropdownLinkBackgroundHover : @navbarInverseLinkBackgroundHover;
+@navbarInverseDropdownLinkBackgroundActive : @navbarInverseLinkBackgroundActive;
 
 
 // Global values
@@ -90,7 +90,7 @@
 @altFontFamily:         @sansFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -155,16 +155,16 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @white;
-@dropdownBorder:                rgba(0,0,0,.2);
-@dropdownDividerTop:            #e5e5e5;
-@dropdownDividerBottom:         @white;
+@dropdownBackground:            @color_one;
+@dropdownBorder:                @color_one;
+@dropdownDividerTop:            darken(@color_one, 10%);
+@dropdownDividerBottom:         darken(@color_one, 10%);
 
-@dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @white;
-@dropdownLinkColorActive:       @white;
+@dropdownLinkColor:             @white;
+@dropdownLinkColorHover:        @navbarLinkColorHover;
+@dropdownLinkColorActive:       @navbarLinkColorHover;
 
-@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundActive:  transparent;
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 

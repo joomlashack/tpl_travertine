@@ -2,15 +2,26 @@
 
 .navbar {
 	.nav {
+		float: none;
+		text-align: center;
 		.m-b-0;
 
 		> li {
+			display: inline-block;
+			float: none;
+
 			> a {
 				text-transform: uppercase;
 				font-weight: bold;
 				text-shadow: 1px 1px 0 @linkColorHover;
 				.p-b-1;
 				.p-t-1;
+			}
+
+			ul {
+				a {
+					text-align: left;
+				}
 			}
 		}
 	}
@@ -34,7 +45,7 @@
 
 .bg-color {
 	.box-sizing(border-box);
-	padding: @paddingLarge;
+	padding: @paddingSmall;
 }
 
 .bg-color-white {
@@ -67,7 +78,7 @@
 }
 
 .text-medium {
-	font-size: @baseFontSize - 2;
+	font-size: @baseFontSize - 1;
 }
 
 .border-radius-large {
@@ -112,6 +123,12 @@ form:last-child,
 	margin-bottom: 0;
 }
 
+a {
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
 	background-color: white;
 }
@@ -120,6 +137,10 @@ div.cat-children h3,
 div.categories-list h3
 {
 	padding-top: 0;
+}
+
+.item-title {
+	.m-b-1;
 }
 
 .categories-list {
@@ -152,14 +173,86 @@ div.categories-list h3
 	background-color: #fff;
 }
 
-.dropdown-menu .divider {
-	background-color: darken(@dropdownBackground, 10%);
-	border-bottom-color: darken(@dropdownBackground, 10%);
+.dropdown-menu {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	.border-bottom-radius-large;
+	.text-medium;
+
+	&:after, &:before {display: none; content: none;}
+
+	.divider {
+		background-color: darken(@dropdownBackground, 10%);
+		border-bottom-color: darken(@dropdownBackground, 10%);
+	}
+
+	li {
+		a {
+			text-shadow: 1px 1px 0 @linkColorHover;
+		}
+	}
 }
 
 .navbar, .breadcrumb {
 	.m-b-2;
 }
+
+.nav-list {
+	li {
+		border-bottom: 1px dashed @tableBorder;
+
+		a {
+			padding-bottom: 4px;
+			padding-top: 4px;
+		}
+	}
+}
+
+// temp
+
+.img-intro-left {
+	.m-b-1;
+}
+
+[class^="newsflash"] {
+	.clearfix();
+
+	.readmore {
+		a {
+		  display: inline-block;
+		  .ie7-inline-block();
+		  padding: 4px 12px;
+		  margin-bottom: 0; // For input.btn
+		  font-size: @baseFontSize;
+		  line-height: @baseLineHeight;
+		  text-align: center;
+		  vertical-align: middle;
+		  cursor: pointer;
+		  border: 1px solid @btnBorder;
+		  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+		  border-bottom-color: darken(@btnBorder, 10%);
+		  .border-radius(@baseBorderRadius);
+		  .ie7-restore-left-whitespace(); // Give IE7 some love
+		  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+			.btn;
+			color: @white;
+			background-color: @btnBackground;
+
+			.caret {
+				border-top-color: @white;
+				border-bottom-color: @white;
+			}
+
+			&:hover, &:focus {
+				color: white;
+				background-color: @btnBackgroundHighlight;
+			}
+		}
+	}
+}
+
+
+//
 
 .items-bg [class^="module"]:not(.none):not(.alert):not(.hero-unit),
 .module > [class^="module"]:not(.none):not(.alert):not(.hero-unit) {
@@ -175,6 +268,7 @@ div.categories-list h3
 
 	> h3 {
 		border-bottom: 1px dashed @tableBorder;
+		font-weight: bold;
 		margin-left: -19px;
 		margin-right: -19px;
 		padding-left: 19px;
@@ -316,7 +410,17 @@ hr {
 }
 
 #menu {
-	.navbar {.m-0;}
+	.navbar {
+		.m-0;
+
+		.nav {
+			> li {
+				> a {
+					font-size: 1.3em;
+				}
+			}
+		}
+	}
 }
 
 .cat-children {
@@ -437,4 +541,8 @@ input.search-query {
 	.m-b-0;
 	margin-right: 5px;
 	max-width: 78%;
+}
+
+.muted {
+	color: @gray;
 }
