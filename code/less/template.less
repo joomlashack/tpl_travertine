@@ -14,8 +14,8 @@
 				text-transform: uppercase;
 				font-weight: bold;
 				text-shadow: 1px 1px 0 @linkColorHover;
-				.p-b-1;
-				.p-t-1;
+				padding-bottom: .9rem;
+				padding-top: .9rem;
 			}
 
 			ul {
@@ -411,7 +411,26 @@ hr {
 
 #menu {
 	.navbar {
-		.m-0;
+		margin: 0 -10px;
+		.relative;
+
+		&:after, &:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 43px;
+			height: 63px;
+		}
+
+		&:after {
+			background-position: left top;
+			right: 100%;
+		}
+
+		&:before {
+			background-position: right top;
+			left: 100%;
+		}
 
 		.nav {
 			> li {
@@ -420,6 +439,11 @@ hr {
 				}
 			}
 		}
+	}
+
+	.navbar-inner {
+		background-image: url(../images/ribbon.png);
+		border-radius: 0;
 	}
 }
 
