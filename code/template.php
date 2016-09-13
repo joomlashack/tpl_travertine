@@ -32,7 +32,7 @@ defined('_JEXEC') or die('Restricted access');
 		?>
 		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-two border-bottom-radius-large shadow  m-b-3 p-b-2 p-t-2">
 			<!-- header -->
-			<header id="header" class="m-b-2">
+			<header id="header" class="m-b-2 color-white text-shadow-dark">
 				<div class="row-fluid">
 					<w:logo name="top" />
 				</div>
