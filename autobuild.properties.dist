@@ -1,2 +1,2 @@
-www.dir=/var/www/travertine
+www.dir=/var/www/travertine/
 node.build=all
