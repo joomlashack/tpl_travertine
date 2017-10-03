@@ -64,7 +64,7 @@
 	<config>
 		<fields name="params" addfieldpath="/templates/js_travertine/wright/parameters/joomla_3.0">
 			<fieldset name="basic">
-        <!-- Start of default Wright params -->
+        		<!-- Start of default Wright params -->
 				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
 				    <option value="1">JYES</option>
 				    <option value="0">JNO</option>
@@ -114,7 +114,8 @@
                 <field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
                 <field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
-			                
+            </fieldset>
+            <fieldset name="footer" addfieldpath="/templates/js_travertine/form/fields">     
                 <field
                     type="customfooter"
                     name="customfooter"
