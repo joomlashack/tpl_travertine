@@ -109,6 +109,15 @@
                 <field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
             </fieldset>
+            <fieldset name="travertine">
+                <field
+                    name="backgroundImage"
+                    type="media"
+                    label="TPL_JS_TRAVERTINE_FIELD_BACKGROUND_IMAGE_LABEL"
+                    description="TPL_JS_TRAVERTINE_FIELD_BACKGROUND_IMAGE_DESC"
+                    class=""
+                    default="" />
+            </fieldset>
             <fieldset name="footer" addfieldpath="/templates/js_travertine/form/fields">
                 <field
                     type="customfooter"

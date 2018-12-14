@@ -20,7 +20,7 @@ defined('_JEXEC') or die('Restricted access');
 	<head>
 		<w:head />
 	</head>
-	<body class="<?php echo $wrightBodyClass ?>">
+	<body class="<?php echo $wrightBodyClass ?>"<?php echo $backgroundImage ?>>
 		<?php
 			if ($this->countModules('toolbar'))
 				:

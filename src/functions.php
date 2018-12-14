@@ -9,3 +9,7 @@
 
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
+
+if($this->params->get('backgroundImage', '')) {
+    $backgroundImage = ' style="background-image:url(' . JURI::base() . $this->params->get('backgroundImage', '') . ');"';
+}
