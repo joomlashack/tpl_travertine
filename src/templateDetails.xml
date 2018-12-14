@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="template" method="upgrade" client="site">
 	<name>js_travertine</name>
-	<creationDate>October 04 2017</creationDate>
+	<creationDate>December 14 2018</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashack 2005 - 2017. All rights reserved</copyright>
+	<copyright>Copyright Joomlashack 2005 - 2018. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>2.7.15</version>
+	<version>2.7.16</version>
     <description>TPL_JS_TRAVERTINE_XML_DESCRIPTION</description>
 
 	<languages folder="language">
@@ -108,6 +108,15 @@
                 <field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
                 <field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
+            </fieldset>
+            <fieldset name="travertine">
+                <field
+                    name="backgroundImage"
+                    type="media"
+                    label="TPL_JS_TRAVERTINE_FIELD_BACKGROUND_IMAGE_LABEL"
+                    description="TPL_JS_TRAVERTINE_FIELD_BACKGROUND_IMAGE_DESC"
+                    class=""
+                    default="" />
             </fieldset>
             <fieldset name="footer" addfieldpath="/templates/js_travertine/form/fields">
                 <field
