@@ -40,8 +40,8 @@
 
 @color_one: #79A094;
 @color_two: #6F593E;
-@color_three: #362511;
-@color_four: #EFEDE0;
+@color_three: darken(saturate(spin(@color_two, -0.6288), 23.7890), 20.0000);
+@color_four: lighten(saturate(spin(@color_two, 18.9388), 3.5912), 56.8627);
 
 // Grays
 // -------------------------
@@ -116,11 +116,11 @@
 @tableBackground:                   transparent; // overall background-color
 @tableBackgroundAccent:             #f9f9f9; // for striping
 @tableBackgroundHover:              @grayLighter; // for hover
-@tableBorder:                       #DFDBC3; // table and cell border
+@tableBorder:                       lighten(saturate(spin(@color_two, 18.3673), 2.1111), 48.0392); // table and cell border
 
 // Buttons
 // -------------------------
-@btnBackground:                     #628F80;
+@btnBackground:                     darken(saturate(spin(@color_one, -1.5385), 1.6416), 7.8431);
 @btnBackgroundHighlight:            darken(@btnBackground, 10%);
 @btnBorder:                         #ccc;
 
@@ -217,7 +217,7 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #87aa9f;
+@navbarBackgroundHighlight:       lighten(saturate(spin(@color_one, -0.3956), 0.0426), 4.7059);
 @navbarBackground:                @color_one;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
