@@ -10,7 +10,8 @@
         "name"           : "Travertine",
         "client"         : "site",
         "package-license": "pro",
-        "target-platform": "3.*"
+        "target-platform": "3.*",
+        "infourl"        : "/changelog/travertine/"
     },
     "authors"          : [
         {
